@@ -9,7 +9,7 @@ import VantaFog from "@/components/VantaFog";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import Link from "next/link";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
-import gtmIllustration from "../../public/images/2df63f_cf537ca0b8254df79a53dae712b84510~mv2.avif";
+import stockMarketIllustration from "../../public/images/markus-winkler-IrRbSND5EUc-unsplash.jpg";
 import { CardContent, CardHeader } from "@/components/ui/card";
 import { MagicCard } from "@/components/magicui/magic-card";
 import profile from '../../public/images/profile.jpg'
@@ -23,36 +23,37 @@ import { Marquee } from "@/components/magicui/marquee";
 
 const reviews = [
     {
-        name: "Arjun Malhotra",
-        username: "@arjun_founder",
-        body: "Entrepreneur Copilot helped me validate my startup idea and build a go-to-market plan in under an hour. Absolute game-changer for solo founders!"
+        name: "Rohit Sharma",
+        username: "@rohit_invests",
+        body: "Stock Market Expert gave me a buy signal on Tata Motors right before the breakout — doubled my returns in just two weeks!"
     },
     {
-        name: "Neha Gupta",
-        username: "@neha_g",
-        body: "The AI-driven customer segmentation was spot-on. We discovered niche audiences we had completely overlooked."
+        name: "Priya Verma",
+        username: "@priya_trader",
+        body: "I finally understand candlestick patterns thanks to the AI explanations. Feels like having a mentor on call 24/7."
     },
     {
-        name: "Vikram Rao",
-        username: "@vikram_startup",
-        body: "Instead of spending weeks on market research, I had actionable insights and channel strategies ready in a single session."
+        name: "Anil Kapoor",
+        username: "@anil_longterm",
+        body: "The portfolio tracker and custom alerts saved me from a big loss during a market dip. Absolutely worth it."
     },
     {
-        name: "Sofia Khan",
-        username: "@sofia_k",
-        body: "We pivoted our product positioning based on the competitive analysis from Entrepreneur Copilot — and saw our conversions double."
+        name: "Sneha Iyer",
+        username: "@sneha_growth",
+        body: "I asked about the best banking sector stocks, and got a clear, data-backed recommendation in seconds — in Hindi!"
     },
     {
-        name: "Karan Patel",
-        username: "@karanp_growth",
-        body: "The outreach and content suggestions saved our team days of brainstorming. It felt like having a full-time GTM strategist in-house."
+        name: "Kunal Mehta",
+        username: "@kunal_options",
+        body: "I use it daily for technical analysis. The RSI and MACD breakdowns are more accurate than most paid tools I’ve tried."
     },
     {
-        name: "Emily Chen",
-        username: "@emily_builds",
-        body: "As a first-time founder, I had no idea where to start. Copilot walked me through every step and gave me the confidence to launch."
+        name: "Aarav Joshi",
+        username: "@aarav_beginner",
+        body: "As a beginner, I was scared to start investing. Stock Market Expert made it simple, safe, and easy to follow."
     }
 ];
+
 
 
 const firstRow = reviews.slice(0, reviews.length / 2);
@@ -101,36 +102,37 @@ const ReviewCard = ({
 
 const steps = [
     {
-        title: "Step 1: Describe Your Startup Idea",
+        title: "Step 1: Ask Your Question",
         description:
-            "Begin by sharing your business concept, target market, and current stage. The Copilot uses this to tailor a GTM strategy specifically for you."
+            "Type in your query about any Indian stock, sector, or market trend — in English or Hindi. You can ask about prices, charts, news, or recommendations."
     },
     {
-        title: "Step 2: Analyze Market & Competition",
+        title: "Step 2: AI Analyzes Live Data",
         description:
-            "The AI scans real-time market data, trends, and competitors to reveal gaps, opportunities, and positioning angles."
+            "The assistant scans real-time stock prices, technical indicators, financial statements, earnings reports, and market news to prepare your answer."
     },
     {
-        title: "Step 3: Define Ideal Customer Profiles",
+        title: "Step 3: Get Clear Insights & Recommendations",
         description:
-            "Get precise audience segments based on demographics, behavior, and buying patterns — so your targeting is laser-focused."
+            "Receive instant, easy-to-understand analysis — whether it’s a buy/sell/hold call, sector outlook, or a company’s growth potential."
     },
     {
-        title: "Step 4: Identify Core Value Proposition",
+        title: "Step 4: Track Your Portfolio",
         description:
-            "Clarify your unique selling points and messaging that will resonate most with your chosen audience."
+            "Add your holdings to the built-in tracker to monitor live prices, performance, and risk. Set custom alerts for price targets or news events."
     },
     {
-        title: "Step 5: Build Your Acquisition Plan",
+        title: "Step 5: Explore ‘What-If’ Scenarios",
         description:
-            "Receive actionable recommendations for channels, partnerships, and campaigns to drive awareness and conversions."
+            "Test investment ideas, compare different stocks, and simulate long-term returns before making any move."
     },
     {
-        title: "Step 6: Launch & Track Progress",
+        title: "Step 6: Learn & Improve Over Time",
         description:
-            "Execute your GTM strategy with built-in progress tracking, automated feedback, and continuous optimization suggestions."
+            "The AI continuously learns from market movements and your feedback, giving you sharper, more personalized advice with every interaction."
     }
 ];
+
 
 
 export default function Home() {
@@ -138,7 +140,7 @@ export default function Home() {
     return (
         <main className="mx-auto">
             <VantaFog />
-           <section className="mt-20 px-4 md:px-36 flex flex-col justify-center items-center text-center">
+         <section className="mt-20 px-4 md:px-36 flex flex-col justify-center items-center text-center">
     <div className="group mb-5 relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
         <span
             className={cn(
@@ -153,33 +155,35 @@ export default function Home() {
                 WebkitClipPath: "padding-box",
             }}
         />
-        🚀
+        📈
         <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
         <AnimatedGradientText className="text-sm font-medium">
-            AI-Powered GTM Strategy Builder for Startup Founders
+            AI-Powered Stock Market Expert for Indian Investors
         </AnimatedGradientText>
         <ChevronRight className="ml-1 size-4 stroke-neutral-500 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
     </div>
 
     <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight text-primary mb-6">
-        Launch Your Startup <AuroraText>Faster & Smarter</AuroraText>  
-        with AI-Driven Go-To-Market Strategies
+        Make Smarter <AuroraText>Investment Decisions</AuroraText>  
+        with Real-Time AI Insights
     </h1>
 
     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
-        Instantly generate, refine, and execute a robust GTM plan tailored to your business idea — from market analysis and ideal customer profiles to acquisition channels and growth initiatives.
+        Instantly get answers about Indian stocks, sectors, and market trends — in English or Hindi.  
+        Analyze live prices, charts, financials, and news, plus get AI-driven buy/sell/hold recommendations.
     </p>
 
-    <div className="">
+    <div>
         <Link href="/search">
             <ShimmerButton className="shadow-2xl">
                 <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    Build My GTM Plan
+                    Ask About a Stock Now
                 </span>
             </ShimmerButton>
         </Link>
     </div>
 </section>
+
 
 
             <section className="pt-20 lg:pt-32 pb-10 px-4 md:px-36 mx-auto">
@@ -212,19 +216,21 @@ export default function Home() {
                 </div>
             </section>
 
-          <section className="flex mt-10 flex-col md:flex-row items-center justify-between px-4 md:px-36 py-12">
+        <section className="flex mt-10 flex-col md:flex-row items-center justify-between px-4 md:px-36 py-12">
     {/* Text Section */}
     <div className="md:w-1/2 text-center md:text-left space-y-4 order-2 md:order-1">
         <h2 className="text-3xl md:text-5xl font-bold text-primary">
-            Build and Launch Your Go-To-Market Strategy — Powered by AI.
+            Your 24/7 AI-Powered Stock Market Assistant.
         </h2>
         <p className="text-lg text-muted-foreground">
-            Entrepreneur Copilot helps you analyze your market, define your ideal customer, and create a step-by-step GTM plan — so you can launch faster, smarter, and with higher ROI.
+            Get instant answers about Indian stocks, sectors, and market trends in English or Hindi.  
+            Analyze live prices, charts, news, and financials — plus receive AI-driven buy/sell/hold recommendations  
+            tailored to your portfolio.
         </p>
         <Link href="/search">
             <ShimmerButton className="shadow-2xl">
                 <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                    Build My GTM Plan
+                    Ask About a Stock
                 </span>
             </ShimmerButton>
         </Link>
@@ -233,15 +239,16 @@ export default function Home() {
     {/* Image Section */}
     <div className="md:w-1/2 mt-10 md:mt-0 order-1 md:order-2 flex justify-center">
         <Image
-            src={gtmIllustration} // Replace with your GTM strategy illustration path
-            alt="AI-Powered Go-To-Market Strategy"
-            className="w-full max-w-md h-96 object-cover"
+            src={stockMarketIllustration} // Replace with stock market themed illustration path
+            alt="AI-Powered Stock Market Insights"
+            className="w-full max-w-md h-96 object-contain"
             width={10}
             height={10}
             unoptimized
         />
     </div>
 </section>
+
 
 
             <section className="mx-4 mt-20 md:mx-36">
@@ -259,7 +266,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="px-4 md:px-36 mt-20">
+           <section className="px-4 md:px-36 mt-20">
     <Accordion
         type="single"
         collapsible
@@ -270,11 +277,12 @@ export default function Home() {
 
         <AccordionItem value="item-1">
             <AccordionTrigger>
-                1. What is Entrepreneur Copilot?
+                1. What is Stock Market Expert?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Entrepreneur Copilot is an AI-powered platform that helps startup founders instantly create, refine, and execute robust go-to-market (GTM) strategies. It analyzes your idea, market, and target audience to deliver a personalized plan for launching and scaling successfully.
+                    Stock Market Expert is an AI-powered assistant that provides real-time insights on Indian stocks, sectors, and market trends. 
+                    It can answer questions, analyze data, and offer actionable recommendations in both English and Hindi.
                 </p>
             </AccordionContent>
         </AccordionItem>
@@ -285,73 +293,80 @@ export default function Home() {
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Simply describe your startup idea and industry. The platform uses AI and real-time market data to recommend customer profiles, competitive positioning, acquisition strategies, and an actionable GTM roadmap tailored to your business.
+                    Simply type your query about any Indian stock, sector, or the overall market. 
+                    The AI pulls live prices, charts, news, and financial data, then applies technical and fundamental analysis to deliver easy-to-understand answers and recommendations.
                 </p>
             </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="item-3">
             <AccordionTrigger>
-                3. What kind of businesses can use it?
+                3. Can it give buy, sell, or hold recommendations?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Entrepreneur Copilot works for solo founders, early-stage startups, accelerators, incubators, and even established businesses entering new markets or pivoting their GTM approach.
+                    Yes. Based on real-time market data, historical trends, and expert-level models, 
+                    Stock Market Expert can suggest whether to buy, sell, or hold a stock — along with the reasoning behind the recommendation.
                 </p>
             </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="item-4">
             <AccordionTrigger>
-                4. Does it use real market data?
+                4. Does it support Hindi?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Yes. The platform integrates real-time market insights, industry trends, and competitive data to ensure your GTM strategy reflects the most up-to-date opportunities and challenges.
+                    Absolutely. You can ask questions and receive answers in both English and Hindi, 
+                    making it accessible for a wider range of investors across India.
                 </p>
             </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="item-5">
             <AccordionTrigger>
-                5. Can it help with customer targeting?
+                5. Can it track my portfolio and set alerts?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Absolutely. Entrepreneur Copilot recommends detailed ideal customer profiles (ICPs) and segments based on demographics, behavior, and purchase patterns, so your outreach is focused and effective.
+                    Yes. You can add your portfolio and set custom alerts for price movements, 
+                    news updates, or technical signals so you never miss important changes.
                 </p>
             </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="item-6">
             <AccordionTrigger>
-                6. Does it suggest acquisition and growth strategies?
+                6. Does it analyze company fundamentals?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Yes. The platform generates channel recommendations, outreach ideas, content strategies, and growth initiatives, so you have a clear execution plan for acquiring and retaining customers.
+                    Yes. It reviews financial statements, earnings reports, balance sheets, and key ratios to provide 
+                    a complete picture of a company’s performance and potential.
                 </p>
             </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="item-7">
             <AccordionTrigger>
-                7. Can it track my GTM progress?
+                7. Can it help with long-term investment strategies?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Yes. You can track execution milestones, measure results, and receive AI-driven optimization tips to adapt your GTM strategy as you go.
+                    Definitely. It can simulate &apos;what-if&apos; scenarios, suggest diversification strategies, 
+                    and give guidance on building a strong, long-term investment portfolio.
                 </p>
             </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="item-8">
             <AccordionTrigger>
-                8. Is Entrepreneur Copilot only for tech startups?
+                8. Is it only for experienced traders?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Not at all. It works for startups and businesses in any industry — from SaaS and e-commerce to manufacturing, services, and offline businesses — as long as you need a GTM plan.
+                    Not at all. Stock Market Expert is designed for everyone — from beginners learning about investing 
+                    to experienced traders looking for deeper analysis and faster insights.
                 </p>
             </AccordionContent>
         </AccordionItem>
@@ -362,12 +377,14 @@ export default function Home() {
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p>
-                    Core features like idea analysis and basic GTM planning are free. Advanced features — such as detailed market reports, custom acquisition plans, and progress tracking — may require a paid subscription.
+                    Yes. You can use core features for free, including basic stock queries and market summaries. 
+                    Premium features like advanced analysis, custom alerts, and portfolio tracking may require a subscription.
                 </p>
             </AccordionContent>
         </AccordionItem>
     </Accordion>
 </section>
+
 
         </main>
     );
