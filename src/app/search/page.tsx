@@ -12,31 +12,36 @@ export default function StockAnalysisPage() {
   const [result, setResult] = useState<string>("");
   const [error, setError] = useState<string>("");
 
-  const handleAnalyze = async () => {
-    if (!question.trim()) {
-      setError("Please enter a question about a stock, sector, or market trend.");
-      return;
-    }
+const handleAnalyze = async () => {
+  if (!question.trim()) {
+    setError("Please enter a question about a stock, sector, or market trend.");
+    return;
+  }
 
-    setLoading(true);
-    setError("");
-    setResult("");
+  setLoading(true);
+  setError("");
+  setResult("");
 
-    try {
-      const response = await axios.post<{ data: string }>(
-        "https://indian-stock-analysis-977121587860.asia-south1.run.app/analyze-stock",
-        { question }
-      );
+  try {
+    const response = await axios.post<{
+      question: string;
+      result: string;
+      status: string;
+    }>(
+      "https://indian-stock-analysis-977121587860.asia-south1.run.app/analyze-stock",
+      { question }
+    );
 
-      console.log("API Response:", response.data);
-      setResult(response.data.data || "No analysis available for this query.");
-    } catch (err) {
-      console.error(err);
-      setError("Failed to fetch stock analysis. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+    console.log("API Response:", response.data);
+    setResult(response.data.result || "No analysis available for this query.");
+  } catch (err) {
+    console.error(err);
+    setError("Failed to fetch stock analysis. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <div>
